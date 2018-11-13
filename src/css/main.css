@@ -524,7 +524,7 @@ ul.color_schemes li {
 	position: fixed;
 	top: 0;
 	height: 100%;
-	min-height: 700px;
+	min-height: 800px;
 	width: 100%;
 	z-index: 0;
 }
