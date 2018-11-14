@@ -61,7 +61,7 @@ $(document).ready(function() {
   //Google maps
   //Map
   var map;
-  var odessa = new google.maps.LatLng(46.45879177, 30.73738575);
+  var odessa = new google.maps.LatLng(13.718897, 100.5463474);
 
   var MY_MAPTYPE_ID = "custom_style";
 
@@ -181,13 +181,13 @@ $(document).ready(function() {
 
     //marker church
     var image_church = new google.maps.MarkerImage(
-      "src/img/marker-church.png",
+      "src/img/marker-hotel.png",
       null,
       null,
       null,
       new google.maps.Size(33, 50)
     );
-    var positionpin_church = new google.maps.LatLng(46.45846658, 30.73616266);
+    var positionpin_church = new google.maps.LatLng(13.718897, 100.5463474);
     var marker_church = new google.maps.Marker({
       position: positionpin_church,
       icon: image_church,
@@ -197,7 +197,7 @@ $(document).ready(function() {
     });
     var boxText_church = document.createElement("div");
     boxText_church.innerHTML =
-      '<div class="grid grid_6 percentage border-white"><div class="block-focus center"><h4>Church</h4><h5>Cerimony</h5><p>12:00 PM</p></div></div><div class="grid grid_6 percentage border-white"><img class="block-focus border-whitsrc="src/img/map-church.jpg"></div>';
+      '<div class="grid grid_6 percentage border-white"><div class="block-focus center"><h4>Hotel</h4><h5>Cerimony</h5><p>12:00 PM</p></div></div><div class="grid grid_6 percentage border-white"><img class="block-focus border-white" src="src/img/map-hotel.jpg"></div>';
     var marker_church_options = {
       content: boxText_church,
       disableAutoPan: false,
@@ -223,96 +223,96 @@ $(document).ready(function() {
     info_box_church.open(map, marker_church);
     //end marker church
 
-    //marker restaurant
-    var image_restaurant = new google.maps.MarkerImage(
-      "src/img/marker-restaurant.png",
-      null,
-      null,
-      null,
-      new google.maps.Size(33, 50)
-    );
-    var positionpin_restaurant = new google.maps.LatLng(
-      46.44708343,
-      30.71826696
-    );
-    var marker_restaurant = new google.maps.Marker({
-      position: positionpin_restaurant,
-      icon: image_restaurant,
-      map: map,
-      flat: true,
-      title: ""
-    });
-    var boxText_restaurant = document.createElement("div");
-    boxText_restaurant.innerHTML =
-      '<div class="grid grid_6 percentage border-white"><div class="block-focus center"><h4><strong>Restaurant</strong></h4><h5>PARTY</h5><p>14:00 PM</p></div></div><div class="grid grid_6 percentage border-white"><img class="block-focus border-whitsrc="src/img/map-restaurant.jpg"></div>';
-    var marker_restaurant_options = {
-      content: boxText_restaurant,
-      disableAutoPan: false,
-      maxWidth: 0,
-      pixelOffset: new google.maps.Size(-127, -160),
-      zIndex: null,
-      boxStyle: {
-        opacity: 1,
-        width: "250px",
-        background: "#fff"
-      },
-      closeBoxMargin: "10px",
-      closeBoxURL: "src/img/map-close.png",
-      infoBoxClearance: new google.maps.Size(1, 1),
-      isHidden: false,
-      pane: "floatPane",
-      enableEventPropagation: false
-    };
-    var info_box_restaurant = new InfoBox(marker_restaurant_options);
-    google.maps.event.addListener(marker_restaurant, "click", function() {
-      info_box_restaurant.open(map, marker_restaurant);
-    });
-    info_box_restaurant.open(map, marker_restaurant);
-    //end marker restaurant
+    // //marker restaurant
+    // var image_restaurant = new google.maps.MarkerImage(
+    //   "src/img/marker-restaurant.png",
+    //   null,
+    //   null,
+    //   null,
+    //   new google.maps.Size(33, 50)
+    // );
+    // var positionpin_restaurant = new google.maps.LatLng(
+    //   46.44708343,
+    //   30.71826696
+    // );
+    // var marker_restaurant = new google.maps.Marker({
+    //   position: positionpin_restaurant,
+    //   icon: image_restaurant,
+    //   map: map,
+    //   flat: true,
+    //   title: ""
+    // });
+    // var boxText_restaurant = document.createElement("div");
+    // boxText_restaurant.innerHTML =
+    //   '<div class="grid grid_6 percentage border-white"><div class="block-focus center"><h4><strong>Restaurant</strong></h4><h5>PARTY</h5><p>14:00 PM</p></div></div><div class="grid grid_6 percentage border-white"><img class="block-focus border-whitsrc="src/img/map-restaurant.jpg"></div>';
+    // var marker_restaurant_options = {
+    //   content: boxText_restaurant,
+    //   disableAutoPan: false,
+    //   maxWidth: 0,
+    //   pixelOffset: new google.maps.Size(-127, -160),
+    //   zIndex: null,
+    //   boxStyle: {
+    //     opacity: 1,
+    //     width: "250px",
+    //     background: "#fff"
+    //   },
+    //   closeBoxMargin: "10px",
+    //   closeBoxURL: "src/img/map-close.png",
+    //   infoBoxClearance: new google.maps.Size(1, 1),
+    //   isHidden: false,
+    //   pane: "floatPane",
+    //   enableEventPropagation: false
+    // };
+    // var info_box_restaurant = new InfoBox(marker_restaurant_options);
+    // google.maps.event.addListener(marker_restaurant, "click", function() {
+    //   info_box_restaurant.open(map, marker_restaurant);
+    // });
+    // info_box_restaurant.open(map, marker_restaurant);
+    // //end marker restaurant
 
-    //marker hotel
-    var image_hotel = new google.maps.MarkerImage(
-      "src/img/marker-hotel.png",
-      null,
-      null,
-      null,
-      new google.maps.Size(33, 50)
-    );
-    var positionpin_hotel = new google.maps.LatLng(46.44779309, 30.7551527);
-    var marker_hotel = new google.maps.Marker({
-      position: positionpin_hotel,
-      icon: image_hotel,
-      map: map,
-      flat: true,
-      title: ""
-    });
-    var boxText_hotel = document.createElement("div");
-    boxText_hotel.innerHTML =
-      '<div class="grid grid_6 percentage block-focus"><div class="block-focus center"><h4>Hotel</h4><h5>Sleep</h5><p><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i></p></div></div><div class="grid grid_6 percentage block-focus"><img class="block-focus block-focusrc="src/img/map-hotel.jpg"></div>';
-    var marker_hotel_options = {
-      content: boxText_hotel,
-      disableAutoPan: false,
-      maxWidth: 0,
-      pixelOffset: new google.maps.Size(-127, -160),
-      zIndex: null,
-      boxStyle: {
-        opacity: 1,
-        width: "250px",
-        background: "#fff"
-      },
-      closeBoxMargin: "10px",
-      closeBoxURL: "src/img/map-close.png",
-      infoBoxClearance: new google.maps.Size(1, 1),
-      isHidden: false,
-      pane: "floatPane",
-      enableEventPropagation: false
-    };
-    var info_box_hotel = new InfoBox(marker_hotel_options);
-    google.maps.event.addListener(marker_hotel, "click", function() {
-      info_box_hotel.open(map, marker_hotel);
-    });
-    info_box_hotel.open(map, marker_hotel);
-    //end marker hotel
+    // //marker hotel
+    // var image_hotel = new google.maps.MarkerImage(
+    //   "src/img/marker-hotel.png",
+    //   null,
+    //   null,
+    //   null,
+    //   new google.maps.Size(33, 50)
+    // );
+    // var positionpin_hotel = new google.maps.LatLng(46.44779309, 30.7551527);
+    // var marker_hotel = new google.maps.Marker({
+    //   position: positionpin_hotel,
+    //   icon: image_hotel,
+    //   map: map,
+    //   flat: true,
+    //   title: ""
+    // });
+    // var boxText_hotel = document.createElement("div");
+    // boxText_hotel.innerHTML =
+    //   '<div class="grid grid_6 percentage block-focus"><div class="block-focus center"><h4>Hotel</h4><h5>Sleep</h5><p><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i><i class="icon icon-star"></i></p></div></div><div class="grid grid_6 percentage block-focus"><img class="block-focus block-focusrc="src/img/map-hotel.jpg"></div>';
+    // var marker_hotel_options = {
+    //   content: boxText_hotel,
+    //   disableAutoPan: false,
+    //   maxWidth: 0,
+    //   pixelOffset: new google.maps.Size(-127, -160),
+    //   zIndex: null,
+    //   boxStyle: {
+    //     opacity: 1,
+    //     width: "250px",
+    //     background: "#fff"
+    //   },
+    //   closeBoxMargin: "10px",
+    //   closeBoxURL: "src/img/map-close.png",
+    //   infoBoxClearance: new google.maps.Size(1, 1),
+    //   isHidden: false,
+    //   pane: "floatPane",
+    //   enableEventPropagation: false
+    // };
+    // var info_box_hotel = new InfoBox(marker_hotel_options);
+    // google.maps.event.addListener(marker_hotel, "click", function() {
+    //   info_box_hotel.open(map, marker_hotel);
+    // });
+    // info_box_hotel.open(map, marker_hotel);
+    // //end marker hotel
   }
   google.maps.event.addDomListener(window, "load", initialize);
   //END GOOGLE MAPS
