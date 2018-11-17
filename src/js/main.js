@@ -197,16 +197,16 @@ $(document).ready(function() {
     });
     var boxText_church = document.createElement("div");
     boxText_church.innerHTML =
-      '<div class="grid grid_6 percentage border-white"><div class="block-focus center"><h4>Hotel</h4><h5>Cerimony</h5><p>12:00 PM</p></div></div><div class="grid grid_6 percentage border-white"><img class="block-focus border-white" src="src/img/map-hotel.jpg"></div>';
+      '<div class="grid grid_6 percentage border-white" id="map-popup"><div class="block-focus center"><h4><a href="https://goo.gl/maps/ZEcfQXfCUWq">U Sathorn Bangkok</a></h4><h5><a href="https://goo.gl/maps/ZEcfQXfCUWq">click</a></h5></div></div><div class="grid grid_6 percentage border-white"><img class="block-focus border-white" src="src/img/map-hotel.jpg"></div>';
     var marker_church_options = {
       content: boxText_church,
       disableAutoPan: false,
       maxWidth: 0,
-      pixelOffset: new google.maps.Size(-127, -160),
+      pixelOffset: new google.maps.Size(-150, -160),
       zIndex: null,
       boxStyle: {
         opacity: 1,
-        width: "250px",
+        width: "300px",
         background: "#fff"
       },
       closeBoxMargin: "10px",
@@ -216,6 +216,7 @@ $(document).ready(function() {
       pane: "floatPane",
       enableEventPropagation: false
     };
+
     var info_box_church = new InfoBox(marker_church_options);
     google.maps.event.addListener(marker_church, "click", function() {
       info_box_church.open(map, marker_church);

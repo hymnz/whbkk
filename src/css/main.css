@@ -1294,6 +1294,19 @@ span.swirl-right {
 	position: absolute !important;
 	right: 0;
 }
+
+.infoBox:before{
+	content : " ";
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #fff;
+	position:absolute;
+	bottom:-10px;
+	left:140px;
+  }
+  
 /* 3.5. END Location  */
 
 /* 3.6. Donation  */
