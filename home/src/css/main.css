@@ -1393,9 +1393,12 @@ span.swirl-right {
 @media only screen and (max-width: 1200px) {
 	.all-title {
 		font-size: 100px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 	.title-date {
-		padding-top: 10px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	.donation-item {
     	font-size: 12px;
