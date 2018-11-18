@@ -72,7 +72,7 @@ $(document).ready(function() {
     }
   });
 
-  var ts = +new Date("Janurary 05, 2019 00:00 GMT+0700");
+  var ts = +new Date("December 22, 2018 00:00 GMT+0700");
   var date_now = new Date();
   var seconds = Math.floor((ts - date_now) / 1000);
   console.log(seconds);

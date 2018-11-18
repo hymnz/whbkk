@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <!-- Mobile Specific Metas -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="HandheldFriendly" content="true" />
+    <meta content="telephone=no" name="format-detection" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="src/img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CClicker+Script"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Stylesheets -->
+    <link href="src/css/fontello-icon.css" rel="stylesheet" type="text/css" />
+    <link href="src/css/linea-icon.css" rel="stylesheet" type="text/css" />
+    <link href="src/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="src/css/simplelightbox.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="src/css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="src/css/flipclock.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS -->
+    <link href="src/css/main.css" rel="stylesheet" type="text/css" />
+    <!-- END custom CSS -->
+    <!-- Switcher color CSS -->
+    <link
+      href="src/css/color-1.css"
+      rel="stylesheet"
+      type="text/css"
+      id="skins"
+    />
+
+    <title>WAAN & HYMN</title>
+  </head>
+  <body>
+    <!-- <div id="root"></div> -->
+
+    <div class="page-overlay">
+      <!-- Preloader -->
+      <div id="preloader">
+        <div class="alignment">
+          <div class="v-align center-middle">
+            <div class="heart-animation one">
+              <i class="icon icon-heart"></i>
+            </div>
+            <div class="heart-animation two">
+              <i class="icon icon-heart"></i>
+            </div>
+            <div class="heart-animation three">
+              <i class="icon icon-heart"></i>
+            </div>
+            <div class="heart-animation four">
+              <i class="icon icon-heart"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Preloader -->
+      <!-- Slide Background Image -->
+      <div class="carousel-fade overlay-slider-black carousel slide">
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+          <div class="item">
+            <!-- Set the first background image using inline CSS below. -->
+            <div
+              class="fill"
+              style="background-image:url('src/img/gallery/portrait/1.jpg');"
+            ></div>
+          </div>
+          <div class="item">
+            <!-- Set the second background image using inline CSS below. -->
+            <div
+              class="fill"
+              style="background-image:url('src/img/gallery/portrait/2.jpg');"
+            ></div>
+          </div>
+          <div class="item">
+            <!-- Set the third background image using inline CSS below. -->
+            <div
+              class="fill"
+              style="background-image:url('src/img/gallery/portrait/3.jpg');"
+            ></div>
+          </div>
+          <div class="item">
+            <!-- Set the third background image using inline CSS below. -->
+            <div
+              class="fill"
+              style="background-image:url('src/img/gallery/portrait/4.jpg');"
+            ></div>
+          </div>
+          <div class="item active">
+            <!-- Set the third background image using inline CSS below. -->
+            <div
+              class="fill"
+              style="background-image:url('src/img/gallery/portrait/5.jpg');"
+            ></div>
+          </div>
+        </div>
+        <!--
+          <div class="carousel-inner">
+              <div class="item active">
+                  <div class="fill" style="background-image:url('https://placehold.it/1900x1080&text=Slide One');"></div>
+              </div>
+              <div class="item">
+                  <div class="fill" style="background-image:url('https://placehold.it/1900x1080&text=Slide Two');"></div>
+              </div>
+              <div class="item">
+                  <div class="fill" style="background-image:url('https://placehold.it/1900x1080&text=Slide Three');"></div>
+              </div>
+          </div>
+        -->
+      </div>
+      <!-- END Slide Background Image -->
+      <!-- Overlay -->
+      <div class="overlay-bg-black overlay-opacity"></div>
+      <!-- END Overlay -->
+      <header>
+        <nav class="navbar navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12 text-white col-transform">
+                <div class="navbar-wrapper">
+                  <!-- Navbar Button -->
+                  <button class="navbar-button show-info" data-href="#content">
+                    <span></span> <span></span> <span></span>
+                  </button>
+                  <!-- End Navbar Button -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div
+        id="info"
+        class="col-md-12 text-white text-center page-info col-transform"
+      >
+        <div class="title-front">We are getting married</div>
+        <div class="logo"><img src="src/img/logo.png" alt="" /></div>
+        <div class="all-title">Pitchaporn <span>&</span> Pongsil</div>
+        <div class="countdown-title">Countdown To Wedding Day</div>
+        <!-- Countdown -->
+        <div id="countdown"></div>
+        <!-- END Countdown -->
+        <div class="title-date">
+          <span class="swirl-left"
+            ><span class="swirl-right"
+              >22<span>.</span>12<span>.</span>2018</span
+            ></span
+          >
+        </div>
+        <div class="title-under">Save the date</div>
+        <i
+          class="icon ico-l-sm icon-l-arrows-slim-down-dashed animated fadeInDown"
+        ></i>
+        <a
+          class="btn btn-border-white show-info animated fadeInUp"
+          role="button"
+          href="#content"
+          >About US</a
+        >
+        <a
+          class="btn btn-border-white animated"
+          role="button"
+          href="https://goo.gl/maps/9W6Fhm5dE1H2"
+          >Map</a
+        >
+      </div>
+
+      <div id="content" class="page-content col-md-6 text-center bg-white">
+        <!-- Happy Couple -->
+
+        <!-- END Love Story -->
+        <!-- Gallery -->
+        <section class="section section-gallery" id="gallery">
+          <!-- Section Title Gallery -->
+          <h2 class="section-title t60"><span>Photo Album</span></h2>
+          <!-- END Section Title Gallery -->
+          <!-- Gallery Images -->
+          <div class="gallery-images row">
+            <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+              <div class="bearr-gallery-item">
+                <a href="src/img/gallery/landscape/1.jpg">
+                  <img src="src/img/gallery/landscape/1.jpg" alt="" />
+                  <div class="fade-icon">
+                    <span class="icon"><i class="icon icon-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+              <div class="bearr-gallery-item">
+                <a href="src/img/gallery/landscape/2.jpg">
+                  <img src="src/img/gallery/landscape/2.jpg" alt="" />
+                  <div class="fade-icon">
+                    <span class="icon"><i class="icon icon-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+              <div class="bearr-gallery-item">
+                <a href="src/img/gallery/landscape/3.jpg">
+                  <img src="src/img/gallery/landscape/3.jpg" alt="" />
+                  <div class="fade-icon">
+                    <span class="icon"><i class="icon icon-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+              <div class="bearr-gallery-item">
+                <a href="src/img/gallery/landscape/4.jpg">
+                  <img src="src/img/gallery/landscape/4.jpg" alt="" />
+                  <div class="fade-icon">
+                    <span class="icon"><i class="icon icon-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+              <div class="bearr-gallery-item">
+                <a href="src/img/gallery/landscape/5.jpg">
+                  <img src="src/img/gallery/landscape/5.jpg" alt="" />
+                  <div class="fade-icon">
+                    <span class="icon"><i class="icon icon-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+              <div class="bearr-gallery-item">
+                <a href="src/img/gallery/landscape/6.jpg">
+                  <img src="src/img/gallery/landscape/6.jpg" alt="" />
+                  <div class="fade-icon">
+                    <span class="icon"><i class="icon icon-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+              <div class="bearr-gallery-item">
+                <a href="src/img/gallery/portrait/1.jpg">
+                  <img src="src/img/gallery/portrait/1.jpg" alt="" />
+                  <div class="fade-icon">
+                    <span class="icon"><i class="icon icon-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+              <div class="bearr-gallery-item">
+                <a href="src/img/gallery/portrait/2.jpg">
+                  <img src="src/img/gallery/portrait/2.jpg" alt="" />
+                  <div class="fade-icon">
+                    <span class="icon"><i class="icon icon-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+              <div class="bearr-gallery-item">
+                <a href="src/img/gallery/portrait/3.jpg">
+                  <img src="src/img/gallery/portrait/3.jpg" alt="" />
+                  <div class="fade-icon">
+                    <span class="icon"><i class="icon icon-heart"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                <div class="bearr-gallery-item">
+                  <a href="src/img/gallery/landscape/7.jpg">
+                    <img src="src/img/gallery/landscape/7.jpg" alt="" />
+                    <div class="fade-icon">
+                      <span class="icon"><i class="icon icon-heart"></i></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                <div class="bearr-gallery-item">
+                  <a href="src/img/gallery/landscape/8.jpg">
+                    <img src="src/img/gallery/landscape/8.jpg" alt="" />
+                    <div class="fade-icon">
+                      <span class="icon"><i class="icon icon-heart"></i></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                <div class="bearr-gallery-item">
+                  <a href="src/img/gallery/landscape/9.jpg">
+                    <img src="src/img/gallery/landscape/9.jpg" alt="" />
+                    <div class="fade-icon">
+                      <span class="icon"><i class="icon icon-heart"></i></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                <div class="bearr-gallery-item">
+                  <a href="src/img/gallery/landscape/10.jpg">
+                    <img src="src/img/gallery/landscape/10.jpg" alt="" />
+                    <div class="fade-icon">
+                      <span class="icon"><i class="icon icon-heart"></i></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                <div class="bearr-gallery-item">
+                  <a href="src/img/gallery/landscape/11.jpg">
+                    <img src="src/img/gallery/landscape/11.jpg" alt="" />
+                    <div class="fade-icon">
+                      <span class="icon"><i class="icon icon-heart"></i></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                <div class="bearr-gallery-item">
+                  <a href="src/img/gallery/landscape/12.jpg">
+                    <img src="src/img/gallery/landscape/12.jpg" alt="" />
+                    <div class="fade-icon">
+                      <span class="icon"><i class="icon icon-heart"></i></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                <div class="bearr-gallery-item">
+                  <a href="src/img/gallery/portrait/4.jpg">
+                    <img src="src/img/gallery/portrait/4.jpg" alt="" />
+                    <div class="fade-icon">
+                      <span class="icon"><i class="icon icon-heart"></i></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                <div class="bearr-gallery-item">
+                  <a href="src/img/gallery/portrait/5.jpg">
+                    <img src="src/img/gallery/portrait/5.jpg" alt="" />
+                    <div class="fade-icon">
+                      <span class="icon"><i class="icon icon-heart"></i></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                <div class="bearr-gallery-item">
+                  <a href="src/img/gallery/portrait/6.jpg">
+                    <img src="src/img/gallery/portrait/6.jpg" alt="" />
+                    <div class="fade-icon">
+                      <span class="icon"><i class="icon icon-heart"></i></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                  <div class="bearr-gallery-item">
+                    <a href="src/img/gallery/landscape/13.jpg">
+                      <img src="src/img/gallery/landscape/13.jpg" alt="" />
+                      <div class="fade-icon">
+                        <span class="icon"><i class="icon icon-heart"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                  <div class="bearr-gallery-item">
+                    <a href="src/img/gallery/landscape/14.jpg">
+                      <img src="src/img/gallery/landscape/14.jpg" alt="" />
+                      <div class="fade-icon">
+                        <span class="icon"><i class="icon icon-heart"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                  <div class="bearr-gallery-item">
+                    <a href="src/img/gallery/landscape/15.jpg">
+                      <img src="src/img/gallery/landscape/15.jpg" alt="" />
+                      <div class="fade-icon">
+                        <span class="icon"><i class="icon icon-heart"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                  <div class="bearr-gallery-item">
+                    <a href="src/img/gallery/landscape/16.jpg">
+                      <img src="src/img/gallery/landscape/16.jpg" alt="" />
+                      <div class="fade-icon">
+                        <span class="icon"><i class="icon icon-heart"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                  <div class="bearr-gallery-item">
+                    <a href="src/img/gallery/landscape/17.jpg">
+                      <img src="src/img/gallery/landscape/17.jpg" alt="" />
+                      <div class="fade-icon">
+                        <span class="icon"><i class="icon icon-heart"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                  <div class="bearr-gallery-item">
+                    <a href="src/img/gallery/landscape/18.jpg">
+                      <img src="src/img/gallery/landscape/18.jpg" alt="" />
+                      <div class="fade-icon">
+                        <span class="icon"><i class="icon icon-heart"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                  <div class="bearr-gallery-item">
+                    <a href="src/img/gallery/portrait/7.jpg">
+                      <img src="src/img/gallery/portrait/7.jpg" alt="" />
+                      <div class="fade-icon">
+                        <span class="icon"><i class="icon icon-heart"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                  <div class="bearr-gallery-item">
+                    <a href="src/img/gallery/portrait/8.jpg">
+                      <img src="src/img/gallery/portrait/8.jpg" alt="" />
+                      <div class="fade-icon">
+                        <span class="icon"><i class="icon icon-heart"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                  <div class="bearr-gallery-item">
+                    <a href="src/img/gallery/portrait/9.jpg">
+                      <img src="src/img/gallery/portrait/9.jpg" alt="" />
+                      <div class="fade-icon">
+                        <span class="icon"><i class="icon icon-heart"></i></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                    <div class="bearr-gallery-item">
+                      <a href="src/img/gallery/landscape/19.jpg">
+                        <img src="src/img/gallery/landscape/19.jpg" alt="" />
+                        <div class="fade-icon">
+                          <span class="icon"><i class="icon icon-heart"></i></span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                    <div class="bearr-gallery-item">
+                      <a href="src/img/gallery/landscape/20.jpg">
+                        <img src="src/img/gallery/landscape/20.jpg" alt="" />
+                        <div class="fade-icon">
+                          <span class="icon"><i class="icon icon-heart"></i></span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                    <div class="bearr-gallery-item">
+                      <a href="src/img/gallery/landscape/21.jpg">
+                        <img src="src/img/gallery/landscape/21.jpg" alt="" />
+                        <div class="fade-icon">
+                          <span class="icon"><i class="icon icon-heart"></i></span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                    <div class="bearr-gallery-item">
+                      <a href="src/img/gallery/landscape/22.jpg">
+                        <img src="src/img/gallery/landscape/22.jpg" alt="" />
+                        <div class="fade-icon">
+                          <span class="icon"><i class="icon icon-heart"></i></span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                    <div class="bearr-gallery-item">
+                      <a href="src/img/gallery/landscape/23.jpg">
+                        <img src="src/img/gallery/landscape/23.jpg" alt="" />
+                        <div class="fade-icon">
+                          <span class="icon"><i class="icon icon-heart"></i></span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                    <div class="bearr-gallery-item">
+                      <a href="src/img/gallery/landscape/24.jpg">
+                        <img src="src/img/gallery/landscape/24.jpg" alt="" />
+                        <div class="fade-icon">
+                          <span class="icon"><i class="icon icon-heart"></i></span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                    <div class="bearr-gallery-item">
+                      <a href="src/img/gallery/portrait/10.jpg">
+                        <img src="src/img/gallery/portrait/10.jpg" alt="" />
+                        <div class="fade-icon">
+                          <span class="icon"><i class="icon icon-heart"></i></span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                    <div class="bearr-gallery-item">
+                      <a href="src/img/gallery/portrait/11.jpg">
+                        <img src="src/img/gallery/portrait/11.jpg" alt="" />
+                        <div class="fade-icon">
+                          <span class="icon"><i class="icon icon-heart"></i></span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                    <div class="bearr-gallery-item">
+                      <a href="src/img/gallery/portrait/12.jpg">
+                        <img src="src/img/gallery/portrait/12.jpg" alt="" />
+                        <div class="fade-icon">
+                          <span class="icon"><i class="icon icon-heart"></i></span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                      <div class="bearr-gallery-item">
+                        <a href="src/img/gallery/landscape/25.jpg">
+                          <img src="src/img/gallery/landscape/25.jpg" alt="" />
+                          <div class="fade-icon">
+                            <span class="icon"><i class="icon icon-heart"></i></span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                      <div class="bearr-gallery-item">
+                        <a href="src/img/gallery/landscape/26.jpg">
+                          <img src="src/img/gallery/landscape/26.jpg" alt="" />
+                          <div class="fade-icon">
+                            <span class="icon"><i class="icon icon-heart"></i></span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                      <div class="bearr-gallery-item">
+                        <a href="src/img/gallery/landscape/27.jpg">
+                          <img src="src/img/gallery/landscape/27.jpg" alt="" />
+                          <div class="fade-icon">
+                            <span class="icon"><i class="icon icon-heart"></i></span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                      <div class="bearr-gallery-item">
+                        <a href="src/img/gallery/landscape/28.jpg">
+                          <img src="src/img/gallery/landscape/28.jpg" alt="" />
+                          <div class="fade-icon">
+                            <span class="icon"><i class="icon icon-heart"></i></span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                      <div class="bearr-gallery-item">
+                        <a href="src/img/gallery/landscape/29.jpg">
+                          <img src="src/img/gallery/landscape/29.jpg" alt="" />
+                          <div class="fade-icon">
+                            <span class="icon"><i class="icon icon-heart"></i></span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                      <div class="bearr-gallery-item">
+                        <a href="src/img/gallery/landscape/30.jpg">
+                          <img src="src/img/gallery/landscape/30.jpg" alt="" />
+                          <div class="fade-icon">
+                            <span class="icon"><i class="icon icon-heart"></i></span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                      <div class="bearr-gallery-item">
+                        <a href="src/img/gallery/portrait/13.jpg">
+                          <img src="src/img/gallery/portrait/13.jpg" alt="" />
+                          <div class="fade-icon">
+                            <span class="icon"><i class="icon icon-heart"></i></span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                      <div class="bearr-gallery-item">
+                        <a href="src/img/gallery/portrait/14.jpg">
+                          <img src="src/img/gallery/portrait/14.jpg" alt="" />
+                          <div class="fade-icon">
+                            <span class="icon"><i class="icon icon-heart"></i></span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                      <div class="bearr-gallery-item">
+                        <a href="src/img/gallery/portrait/15.jpg">
+                          <img src="src/img/gallery/portrait/15.jpg" alt="" />
+                          <div class="fade-icon">
+                            <span class="icon"><i class="icon icon-heart"></i></span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                        <div class="bearr-gallery-item">
+                          <a href="src/img/gallery/landscape/31.jpg">
+                            <img src="src/img/gallery/landscape/31.jpg" alt="" />
+                            <div class="fade-icon">
+                              <span class="icon"><i class="icon icon-heart"></i></span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                        <div class="bearr-gallery-item">
+                          <a href="src/img/gallery/landscape/32.jpg">
+                            <img src="src/img/gallery/landscape/32.jpg" alt="" />
+                            <div class="fade-icon">
+                              <span class="icon"><i class="icon icon-heart"></i></span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                        <div class="bearr-gallery-item">
+                          <a href="src/img/gallery/landscape/33.jpg">
+                            <img src="src/img/gallery/landscape/33.jpg" alt="" />
+                            <div class="fade-icon">
+                              <span class="icon"><i class="icon icon-heart"></i></span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                        <div class="bearr-gallery-item">
+                          <a href="src/img/gallery/landscape/34.jpg">
+                            <img src="src/img/gallery/landscape/34.jpg" alt="" />
+                            <div class="fade-icon">
+                              <span class="icon"><i class="icon icon-heart"></i></span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                        <div class="bearr-gallery-item">
+                          <a href="src/img/gallery/landscape/35.jpg">
+                            <img src="src/img/gallery/landscape/35.jpg" alt="" />
+                            <div class="fade-icon">
+                              <span class="icon"><i class="icon icon-heart"></i></span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                        <div class="bearr-gallery-item">
+                          <a href="src/img/gallery/landscape/36.jpg">
+                            <img src="src/img/gallery/landscape/36.jpg" alt="" />
+                            <div class="fade-icon">
+                              <span class="icon"><i class="icon icon-heart"></i></span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                        <div class="bearr-gallery-item">
+                          <a href="src/img/gallery/portrait/16.jpg">
+                            <img src="src/img/gallery/portrait/16.jpg" alt="" />
+                            <div class="fade-icon">
+                              <span class="icon"><i class="icon icon-heart"></i></span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                        <div class="bearr-gallery-item">
+                          <a href="src/img/gallery/portrait/17.jpg">
+                            <img src="src/img/gallery/portrait/17.jpg" alt="" />
+                            <div class="fade-icon">
+                              <span class="icon"><i class="icon icon-heart"></i></span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 no-space">
+                        <div class="bearr-gallery-item">
+                          <a href="src/img/gallery/portrait/18.jpg">
+                            <img src="src/img/gallery/portrait/18.jpg" alt="" />
+                            <div class="fade-icon">
+                              <span class="icon"><i class="icon icon-heart"></i></span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+          </div>
+          <!-- END Gallery Images -->
+        </section>
+        <!-- END Gallery -->
+      </div>
+    </div>
+
+    <!-- All JavaScript Libraries -->
+    <script src="src/js/jquery-3.1.1.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+    <script src="src/js/jquery.arctext.js"></script>
+    <script src="src/js/flipclock.js"></script>
+    <script src="src/js/simple-lightbox.js"></script>
+    <!-- Simple Lightbox -->
+    <!-- Infobox -->
+    <!-- Custom JavaScript -->
+    <script src="src/js/main.js"></script>
+    <!-- Switcher Color JavaScript -->
+    <script src="src/js/switcher/cookie.js"></script>
+    <script src="src/js/switcher/colorswitcher.js"></script>
+  </body>
+</html>
